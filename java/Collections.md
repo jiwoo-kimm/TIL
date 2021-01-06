@@ -57,7 +57,6 @@
 ### TreeSet
 
 - `NavigableSet` implementation based on a `TreeMap`
-- extends `AbstractSet` class
+- extends `AbstractSet` class, offering additional [methods](https://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html)
 - ordered using their natural ordering, or by a `comparator`
-- offer additional [methods](https://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html)
 - O(log n) for the basic operations
