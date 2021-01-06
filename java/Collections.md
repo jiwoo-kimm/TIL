@@ -2,9 +2,8 @@
 
 ## Stack
 
-- package `java.util`
-- `Vector` 클래스 상속
-- `Serializable`, `Cloneable`, `Iterable<E>`, `Collection<E>`, `List<E>`, `RandomAccess` 인터페이스 구현
+- extends `Vector` class
+- implements `Serializable`, `Cloneable`, `Iterable<E>`, `Collection<E>`, `List<E>`, `RandomAccess` interface
 
 ### Methods
 
@@ -33,3 +32,32 @@
 |예외|`ArrayIndexOutOfBoundsException`|`EmptyStackException`|
 
 #### `Stack` 클래스에 직접 구현된 `push()`, `pop()`를 사용함으로써 `Stack`임을 명확히 하는 것이 바람직하다.
+
+---
+
+## Set
+
+- A collection that contains no duplicate elements
+- permits the null element
+
+### HashSet
+
+- implements `Set` interface, backed by a hash table
+- no guarantees as to the iteration order of the set
+- O(1)
+
+### LinkedHashSet
+
+- Hash table & Linked list implementation of Set interface, with predictable iteration order
+- extends `HashSet` class
+- maintains a doubly-linked list running through all of its entries
+- linked list ordering defined by `insertion-order`
+- O(1)
+
+### TreeSet
+
+- `NavigableSet` implementation based on a `TreeMap`
+- extends `AbstractSet` class
+- ordered using their natural ordering, or by a `comparator`
+- offer additional [methods](https://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html)
+- O(log n) for the basic operations
