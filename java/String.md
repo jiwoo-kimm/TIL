@@ -1,3 +1,9 @@
 # String
 
-## `split()`
+## Method
+
+### `split()`
+
+### `trim()`
+
+### `strip()`
