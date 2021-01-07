@@ -34,7 +34,7 @@
 
 - Returns a string whose value is this string, with all **leading and trailing** white space removed
 - **white space**
-- 공백, '\n', '\t', '\f', '\r', and other seperators on Unicode
+- 공백, '\n', '\t', '\f', '\r', and other seperators on Unicode<br>
 +) `stripLeading()`, `stripTailing()`
 
 ### `trim()`
