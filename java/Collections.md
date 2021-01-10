@@ -2,7 +2,7 @@
 - A collection is an object that represents a **group of objects**
 - A collections framework is a **unified architecture for representing and manipulating collections**, enabling collections to be manipulated independently of implementation details
 
-<details open>
+<details closed>
 <summary>Stack</summary>
 <br>
   
@@ -40,8 +40,7 @@
 #### `Stack` 클래스에 직접 구현된 `push()`, `pop()`를 사용함으로써 `Stack`임을 명확히 하는 것이 바람직하다.
 
 </details>
-
-<details open>
+<details closed>
 <summary>Set</summary>
 <br>
   
