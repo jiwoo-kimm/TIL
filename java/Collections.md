@@ -71,3 +71,11 @@
 - O(log n) for the basic operations
 
 </details>
+<details closed>
+<summary>ListIterator</summary>
+<br>
+
+## ListIterator
+  
+  
+</details>
