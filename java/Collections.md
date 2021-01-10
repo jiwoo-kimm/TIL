@@ -91,8 +91,6 @@
 <summary>Comparable & Comparator</summary>
   
 ## Comparable & Comparator
-
-### Primitive & Reference Type
 * 기본적인 Java Object는 `Comparable interface`가 구현되어 있음
 * `sort()` 메소드는 내부적으로 해당 클래스의 `compareTo()` 메소드 호출
 
