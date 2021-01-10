@@ -20,6 +20,21 @@
 - good for add, remove operations
 - bad accessability to a random element
 
+### ListIterator
+
+- Iterator + 양방향 조회기능추가
+- List interface 구현한 collections에서 사용 가능
+
+#### Method
+
+|Method|Description|Returns|Throws|
+|--|--|--|--|
+|`hasNext()`|Returns true if this list iterator has more elements when traversing the list in the forward direction|||
+|`hasPrevious()`|Returns true if this list iterator has more elements when traversing the list in the reverse direction.|||
+|`next()`|Returns the next element in the list and advances the cursor position|the next element on the list|`NoSuchElementException` if the iteration has no next element|
+|`previous()`|Returns the previous element in the list and moves the cursor position backwards|the previous element on the list|`NoSuchElementException` if the iteration has no previous element|
+|`remove()`|Removes from the list the last element that was returned by next() or previous()||- `UnsupportedOperationException` if the remove operation is not supported by this list iterator<br>- `IllegalStateException` if neither next nor previous have been called, or remove or add have been called after the last call to next or previous|
+
 </details>
 <details closed>
 <summary>Stack</summary>
@@ -105,24 +120,6 @@
 - O(log n) time cost for the containsKey, get, put and remove operations
 - best for range search, sorting operations
 
-</details>
-<details closed>
-<summary>ListIterator</summary>
-
-## ListIterator
-- Iterator + 양방향 조회기능추가
-- List interface 구현한 collections에서 사용 가능
-
-### Method
-
-|Method|Description|Returns|Throws|
-|--|--|--|--|
-|`hasNext()`|Returns true if this list iterator has more elements when traversing the list in the forward direction|||
-|`hasPrevious()`|Returns true if this list iterator has more elements when traversing the list in the reverse direction.|||
-|`next()`|Returns the next element in the list and advances the cursor position|the next element on the list|`NoSuchElementException` if the iteration has no next element|
-|`previous()`|Returns the previous element in the list and moves the cursor position backwards|the previous element on the list|`NoSuchElementException` if the iteration has no previous element|
-|`remove()`|Removes from the list the last element that was returned by next() or previous()||- `UnsupportedOperationException` if the remove operation is not supported by this list iterator<br>- `IllegalStateException` if neither next nor previous have been called, or remove or add have been called after the last call to next or previous|
-  
 </details>
 <details closed>
 <summary>Comparable & Comparator</summary>
