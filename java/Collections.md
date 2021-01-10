@@ -94,12 +94,11 @@
 
 ### Primitive & Reference Type
 * 기본적인 Java Object는 `Comparable interface`가 구현되어 있음
-* Array Type Object : `Arrays.sort()`
-* Reference Type Object : `Collections.sort()`
 * `sort()` 메소드는 내부적으로 해당 클래스의 `compareTo()` 메소드 호출
 
 ### Comparable
-* Class에 `Comparable interface` 구현 후 `compareTo()` 메소드 구현하여 사용
+* 기본 정렬기준을 구현
+* Class에 `Comparable interface` 구현 후 `compareTo()` 메소드 오버라이딩
 
 #### `compareTo()`
 * 현재 object가 먼저면 `음수` 리턴
@@ -124,9 +123,8 @@ public class MyClass implements Comparable<MyClass> {
 ```
 
 ### Comparator
-* 기존 `Comparable` 정의와 다른 정렬 결과를 얻고 싶을 때 사용
-* `Arrays.sort()`, `Collections.sort()`의 두번째 parameter로 `Comparator` 구현체를 전달
-
+* 기존 `Comparable` 정의와 다른 기준으로 정렬하고자 할 때 사용
+* `sort()`의 두번째 parameter로 `Comparator` 구현체를 전달
 
 ```java
 Arrays.sort(arr, new Comparator<MyClass>() {
