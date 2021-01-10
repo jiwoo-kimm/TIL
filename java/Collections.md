@@ -4,7 +4,6 @@
 
 <details closed>
 <summary>Stack</summary>
-<br>
   
 ## Stack
 
@@ -42,7 +41,6 @@
 </details>
 <details closed>
 <summary>Set</summary>
-<br>
   
 ## Set
 
@@ -73,7 +71,6 @@
 </details>
 <details closed>
 <summary>ListIterator</summary>
-<br>
 
 ## ListIterator
   
