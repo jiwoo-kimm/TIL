@@ -42,7 +42,7 @@
 </details>
 
 <details open>
-<summary>Stack</summary>
+<summary>Set</summary>
 <br>
   
 ## Set
