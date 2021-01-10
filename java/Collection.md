@@ -3,6 +3,25 @@
 - A collections framework is a **unified architecture for representing and manipulating collections**, enabling collections to be manipulated independently of implementation details
 
 <details closed>
+<summary>List</summary>
+  
+## List
+
+### ArrayList
+
+- array based list
+- bad for add, remove operations
+- best for sequential add, remove operations
+- high accessability to a random element
+
+### LinkedList
+
+- link based list
+- good for add, remove operations
+- bad accessability to a random element
+
+</details>
+<details closed>
 <summary>Stack</summary>
   
 ## Stack
