@@ -2,6 +2,10 @@
 - A collection is an object that represents a **group of objects**
 - A collections framework is a **unified architecture for representing and manipulating collections**, enabling collections to be manipulated independently of implementation details
 
+<details open>
+<summary>Stack</summary>
+<br>
+  
 ## Stack
 
 - extends `Vector` class
@@ -35,8 +39,12 @@
 
 #### `Stack` 클래스에 직접 구현된 `push()`, `pop()`를 사용함으로써 `Stack`임을 명확히 하는 것이 바람직하다.
 
-<br>
+</details>
 
+<details open>
+<summary>Stack</summary>
+<br>
+  
 ## Set
 
 - A collection that contains no duplicate elements
@@ -62,3 +70,5 @@
 - extends `AbstractSet` class, offering additional [methods](https://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html)
 - ordered using their natural ordering, or by a `comparator`
 - O(log n) for the basic operations
+
+</details>
