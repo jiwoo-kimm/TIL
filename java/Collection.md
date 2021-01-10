@@ -65,8 +65,26 @@
 
 - `NavigableSet` implementation based on a `TreeMap`, a Red-Black tree
 - extends `AbstractSet` class, offering additional [methods](https://docs.oracle.com/javase/7/docs/api/java/util/TreeSet.html)
-- ordered using their natural ordering, or by a `comparator`
+- ordered using their natural ordering, or by a Comparator
 - O(log n) for the basic operations
+
+</details>
+<details closed>
+<summary>Map</summary>
+
+## Map
+
+### HashMap
+
+- Hash table based implementation of the Map interface
+- O(1) for search operations
+
+### TreeMap
+
+- A Red-Black tree based NavigableMap implementation
+- sorted according to the natural ordering of its keys, or by a Comparator
+- O(log n) time cost for the containsKey, get, put and remove operations
+- best for range search, sorting operations
 
 </details>
 <details closed>
@@ -132,10 +150,4 @@ Arrays.sort(arr, new Comparator<MyClass>() {
   }
 });
 ```
-</details>
-<details closed>
-<summary>Comparable & Comparator</summary>
-
-
-
 </details>
