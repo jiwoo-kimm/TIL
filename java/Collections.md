@@ -84,7 +84,7 @@
 |`hasPrevious()`|Returns true if this list iterator has more elements when traversing the list in the reverse direction.|||
 |`next()`|Returns the next element in the list and advances the cursor position|the next element on the list|`NoSuchElementException` if the iteration has no next element|
 |`previous()`|Returns the previous element in the list and moves the cursor position backwards|the previous element on the list|`NoSuchElementException` if the iteration has no previous element|
-|`remove()`|Removes from the list the last element that was returned by next() or previous()|- `UnsupportedOperationException` if the remove operation is not supported by this list iterator<br>- `IllegalStateException` if neither next nor previous have been called, or remove or add have been called after the last call to next or previous|
+|`remove()`|Removes from the list the last element that was returned by next() or previous()||- `UnsupportedOperationException` if the remove operation is not supported by this list iterator<br>- `IllegalStateException` if neither next nor previous have been called, or remove or add have been called after the last call to next or previous|
 
   
 </details>
