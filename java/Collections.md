@@ -1,4 +1,4 @@
-# JAVA Collection
+# JAVA Collections
 - A collection is an object that represents a **group of objects**
 - A collections framework is a **unified architecture for representing and manipulating collections**, enabling collections to be manipulated independently of implementation details
 
