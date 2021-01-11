@@ -91,3 +91,11 @@ class FruitBox<T extends Fruit & Eatable> { ... }
 ```java
 static <T> void sort(List<T> list, Comparator<? super T> c) { ... }
 ```
+
+<br>
+
+## Generic 형변환
+
+- Generic type ↔ Primitive type: 가능
+- Type parameter가 다른 Generic type 간: 불가능
+- Type parameter가 다형성에 적용되는 경우: 가능
