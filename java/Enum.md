@@ -75,4 +75,3 @@ enum Transportation {
   public int getBasicFare() { return BASIC_FARE; }
 }
 ```
-
