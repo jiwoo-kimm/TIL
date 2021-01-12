@@ -1,6 +1,20 @@
 # Enum
 
 - 향상된 열거형
+```java
+enum Direction {  EAST, WEST  }
+```
+       내부적   ↓   구현 방식
+```java
+enum Direction {
+  static final Direction EAST = new Direction("EAST");
+  static final Direction WEST = new Direction("WEST");
+  
+  private String name;
+  
+  private Direction(String name)  { this.name = name; }
+}
+```
 - enum 상수 간 비교
   - 가능: `==`, `equals()`, `compareTo()`
   - 불가능: `>`, `<`
@@ -41,3 +55,24 @@ enum Direction {
   public String getSymbol() { return symbol; }
 }
 ```
+
+### Abstract Method
+
+- 각 enum 상수에 따라 달라지는 메소드 구현을 위해 추상 메소드 선언
+- 각 enum 상수가 공통된 필드에 접근할 수 있도록 접근 제어자 설정
+```java
+enum Transportation {
+  BUS(100) {  int fare(int distance) {  return distance * BASIC_FARE; }},
+  TRAIN(150) {  int fare(int distance) {  return distance * BASIC_FARE; }},
+  AIRPLANE(300) {  int fare(int distance) {  return distance * BASIC_FARE; }};
+  
+  abstract int fare(int distance);
+  
+  protected final int BASIC_FARE;
+  
+  Transportation(int basicFare) { BASIC_FARE = basicFARE; }
+  
+  public int getBasicFare() { return BASIC_FARE; }
+}
+```
+
