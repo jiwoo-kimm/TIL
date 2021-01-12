@@ -59,7 +59,6 @@ enum Direction {
 ### Abstract Method
 
 - 각 enum 상수에 따라 달라지는 메소드 구현을 위해 추상 메소드 선언
-- 각 enum 상수가 공통된 필드에 접근할 수 있도록 접근 제어자 설정
 ```java
 enum Transportation {
   BUS(100) {  int fare(int distance) {  return distance * BASIC_FARE; }},
