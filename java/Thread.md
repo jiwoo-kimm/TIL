@@ -18,3 +18,28 @@
 |`run()`|implement|override|
 |instance|`Thread t = new MyThread();`|`Thread t = new Thread(new MyThread());`|
 |Thread class method|객체에서 직접 호출|`static Thread currentThread()`를 통해 접근|
+
+## Lock class
+
+### ReentrantLock
+- 가장 일반적인 배타 lock
+- 재진입이 가능한 lock
+
+### ReentrantReadWriteLock
+- 읽기에는 공유적이고 쓰기에는 배타적인 lock
+
+### StampedLock
+- ReentrantReadWriteLock에 낙관적 읽기 lock 추가
+- 무조건 읽기 lock을 걸지 않고, 쓰기와 읽기가 충돌할 때만 쓰기가 끝난 후에 읽기 lock 걸음
+- lock을 걸거나 해지할 때 `stamp`(long 타입의 정수값) 사용
+
+### Condition
+- thread 종류에 따라 wait & notify를 다르게 주기 위한 클래스
+- `Condition c = lock.newCondition();`
+
+|Object|Condition|
+|--|--|
+|wait()|await()<br>awaitUninterruptibly()|
+|wait(long timeout)|await(long time, TimeUnit unit)<br>awaitNanos(long nanosTimeout)<br>awaitUnit(Date deadline)|
+|notify()|signal()|
+|notifyAll()|signalAll()|
