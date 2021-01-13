@@ -49,3 +49,22 @@
 - synchronized block과 같은 효과
 - 캐시와 메모리 간 값 동기화
 - 크기 4 byte 이상의 값을 원자화
+
+## fork & join framework
+- 하나의 작업을 여러 쓰레드가 동시에 처리하도록 함
+  - `RecursiveAction`: 리턴값이 없는 작업 구현
+  - `RecursiveTask`: 리턴값이 있는 작업 구현
+
+### `compute()`
+- 오버라이딩으로 작업 구현
+- work stealing: 작업큐가 비어있는 thread는 다른 thread의 작업큐에서 작업을 가져와서 수행
+- 작업을 어떻게 나눌 것인가에 대해서도 명시 필요
+  - `fork()`: 작업큐에 저장. 비동기 메소드
+  - `join()`: 작업큐에서 결과 호출. 동기 메소드
+
+### `invoke()`
+```java
+ForkJoinPool pool = new ForkJoinPool();
+SomeTask task = new SomeTask();
+Long result = pool.invoke(task);
+```
