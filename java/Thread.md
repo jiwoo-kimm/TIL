@@ -55,14 +55,14 @@
   - `RecursiveAction`: 리턴값이 없는 작업 구현
   - `RecursiveTask`: 리턴값이 있는 작업 구현
 
-### `compute()`
+### compute()
 - 오버라이딩으로 작업 구현
 - work stealing: 작업큐가 비어있는 thread는 다른 thread의 작업큐에서 작업을 가져와서 수행
 - 작업을 어떻게 나눌 것인가에 대해서도 명시 필요
   - `fork()`: 작업큐에 저장. 비동기 메소드
   - `join()`: 작업큐에서 결과 호출. 동기 메소드
 
-### `invoke()`
+### invoke()
 ```java
 ForkJoinPool pool = new ForkJoinPool();
 SomeTask task = new SomeTask();
