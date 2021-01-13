@@ -11,3 +11,10 @@
 |TIMED_WAITING|정해진 시간만큼 unrunnable 일시정지된 상태|
 |TERMINATED|작업이 종료된 상태|
 
+## Implementation
+
+||`implements Runnable`|`extends Thread`|
+|--|--|--|
+|`run()`|implement|override|
+|instance|`Thread t = new MyThread();`|`Thread t = new Thread(new MyThread());`|
+|Thread class method|객체에서 직접 호출|`static Thread currentThread()`를 통해 접근|
