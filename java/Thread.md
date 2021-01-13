@@ -19,7 +19,7 @@
 |instance|`Thread t = new MyThread();`|`Thread t = new Thread(new MyThread());`|
 |Thread class method|객체에서 직접 호출|`static Thread currentThread()`를 통해 접근|
 
-## Lock class
+## Lock
 
 ### ReentrantLock
 - 가장 일반적인 배타 lock
@@ -43,3 +43,9 @@
 |wait(long timeout)|await(long time, TimeUnit unit)<br>awaitNanos(long nanosTimeout)<br>awaitUnit(Date deadline)|
 |notify()|signal()|
 |notifyAll()|signalAll()|
+
+## volatile
+- 멀티 코어 프로세서에서 코어 간 변수 값 불일치를 해결하기 위한 키워드
+- synchronized block과 같은 효과
+- 캐시와 메모리 간 값 동기화
+- 크기 4 byte 이상의 값을 원자화
