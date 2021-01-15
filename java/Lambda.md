@@ -13,6 +13,7 @@
 
 (매개변수) -> { 문장들 }
 ```
+<br>
 
 ## Functional Interface
 - 인터페이스를 구현한 익명 객체는 람다식으로 대체 가능
@@ -53,3 +54,30 @@
 ||V merge(K key, V, value, BiFunction<V,V,V> f)|모든 요소에 병합 f 수행|
 ||void forEach(BiConsumer<K,V> action)|모든 요소에 action 수행|
 ||void replaceAll(BiFunction<K,V,V> f)|모든 요소에 치환 f 수행|
+
+###  기본형 함수형 인터페이스
+||메소드|매개변수|리턴값|설명|
+|--|--|--|--|--|
+|DoubleToIntFunction|int applyAsInt(double d)|O|O|AToBFunction -> A입력 B출력|
+|ToIntFunction<T>|int applyAsInt(T value)|O|O|ToBFunction -> 지네릭입력 B출력|
+|IntFunction<R>|R apply(T, U)|O|O|AFunction -> A입력 지네릭출력|
+|ObjIntConsumer<T>|void accept(T, U)|O|X|ObjAConsumer -> T,A 입력|
+
+<br>
+
+## Function의 합성
+|메소드|설명|
+|--|--|
+|default <V> Function<T,V> andThen(Function<R,V> after)|f -> g|
+|default <V> Function<V,R> compose(Function<R,V> before)|g -> f|
+|static <T> Function<T,T> identity()|항등 함수 (f(x)=x)|
+          
+<br>
+
+## Predicate의 결합
+|메소드|설명|
+|--|--|
+|and()|&&|
+|or()|\|\||
+|negate()|부정|
+|isEqual()|boolean result = Predicate.isEqual(str1).test(str2);|
