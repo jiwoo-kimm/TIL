@@ -81,3 +81,20 @@
 |or()|\|\||
 |negate()|부정|
 |isEqual()|boolean result = Predicate.isEqual(str1).test(str2);|
+
+<br>
+
+## 메소드 참조
+|종류|람다|메소드 참조|
+|--|--|--|
+|static 메소드 참조|(x) -> ClassName.method(x)|ClassName::method|
+|인스턴스 메소드 참조|(obj, x) -> obj.method(x)|ClassName::method|
+|특정 객체 인스턴스 메소드 참조|(x) -> obj.method(x)|obj::method|
+
+```java
+BiFunction<Integer, String, MyClass> bf = (i, s) -> new MyClass(i, s);
+BiFunction<Integer, String, MyClass> bf2 = MyClass::new;
+
+Function<Integer, int[]> f = x -> new int[x];
+Function<Integer, int[]> f2 = int[]::new;
+```
