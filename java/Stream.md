@@ -100,7 +100,7 @@ sequential(): 순차 연산 수행 (기본값)
 ```java
 Stream<R> map(Function<? super T, ? extends R> mapper)
 ```
-- 원하는 특정 형태로 요소를 변환할 때 사용
+- 원하는 특정 형태로 요소를 변환
 - T 타입을 R 타입으로 변환해서 반환하는 Function을 매개변수로 지정
 
 ```java
@@ -108,7 +108,7 @@ DoubleStream mapToDouble(ToDoubleFunction<? super T> mapper)
 IntStream mapToInt(ToIntFunction<? super T> mapper)
 LongStream mapToLong(ToLongFunction<? super T> mapper)
 ```
-- `Stream<T>` 타입이 아닌 기본형 stream으로 변환할 때 사용
+- `Stream<T>` 타입이 아닌 기본형 stream으로 변환
   - `Stream<String>` → `IntStream`: `mapToInt(Integer::parseInt)`
   - `Stream<Integer>` → `IntStream`: `mapToInt(Integer::intValue)`
 
@@ -116,11 +116,19 @@ LongStream mapToLong(ToLongFunction<? super T> mapper)
 Stream<U> mapToObj(IntFunction<? extends U> mapper)
 Stream<Integer> boxed()
 ```
-- 기본형 stream을 `Stream<T>`타입으로 변환할 때 사용
+- 기본형 stream을 `Stream<T>`타입으로 변환
+
+```java
+Stream<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper)
+```
+- `Stream<T[]>`를 `Stream<T>`로 변환
 
 #### 조회
 
-- `peek()`: stream의 소모 없이 연산 결과 확인 가능
+```java
+Stream<T> peek(Consumer<? super T> action)
+```
+- stream의 소모 없이 action을 통해 연산 결과 확인 가능
 
 ### 최종연산
 
