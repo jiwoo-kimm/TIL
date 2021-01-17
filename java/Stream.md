@@ -6,14 +6,8 @@
 - 일회용이다.
 - 데이터 소스를 변경하지 않는다.
   - 필요하다면 작업 결과를 배열이나 컬렉션으로 반환할 수 있다.
-  ```java
-  List<String> sorted = stream.sorted().collect(Collectors.toList());
-  ```
 - 작업을 내부 반복으로 처리한다.
   - 반복문을 메소드의 내부에 숨길 수 있다.
-  ```java
-  stream.forEach(System.out::println);
-  ```
 
 ## 타입
 - `Stream<T>`가 기본 타입
