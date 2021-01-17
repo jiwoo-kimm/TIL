@@ -93,7 +93,7 @@ sequential(): 순차 연산 수행 (기본값)
 - `sorted()`: 기본 정렬 기준에 따라 요소 정렬
 - `sorted(Comparator<? super T> comparator)`: comparator 또는 람다식에 따라 요소 정렬
 
-> `Comparator` interface의 정렬 메소드 [참고](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html)
++) `Comparator` interface의 정렬 메소드 [참고](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html)
 
 #### 변환
 
