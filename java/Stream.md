@@ -140,3 +140,4 @@ OptionalInt max()
 OptionalInt min()
 IntSummaryStatistics summaryStatistics()  // 스트림 소모 한 번으로 위의 값들을 얻을 수 있음
 ```
+
