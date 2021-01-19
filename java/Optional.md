@@ -3,6 +3,8 @@
 - `null` 체크를 위한 if문 대신 자체 메소드 사용
 - 더 간결하고 안전한 코드
 
+<br>
+
 ## 생성
 
 #### `of()`
@@ -21,6 +23,8 @@ Optional<String> opt = Optional.ofNullable(null);
 ```java
 Optional<String> opt = Optional.<String>empty();
 ```
+
+<br>
 
 ## 값 불러오기
 
