@@ -75,6 +75,8 @@ parallel(): 병렬 연산 수행
 sequential(): 순차 연산 수행 (기본값)
 ```
 
+<br>
+
 ### 중간연산
 - 최종 연산 호출 시까지 지연되었다가 한 시점에 차례로 소모
 
@@ -130,7 +132,43 @@ Stream<T> peek(Consumer<? super T> action)
 ```
 - stream의 소모 없이 action을 통해 연산 결과 확인 가능
 
+<br>
+
 ### 최종연산
+
+#### 조회
+```java
+void forEach(Consumer<? super T> action)
+```
+- stream 소모해서 action 수행
+
+#### 조건검사
+
+- `boolean allMatch(Predicate<T> predicate)`: predicate 조건에 모든 요소가 일치하는지 검사
+- `boolean anyMatch(Predicate<T> predicate)`: predicate 조건에 일부 요소가 일치하는지 검사
+- `boolean noneMatch(Predicate<T> predicate)`: predicate 조건에 모든 요소가 일치하지 않는지 검사
+- `Optional<T> findFirst(Predicate<T> predicate)`: predicate 조건에 일치하는 첫 번째 요소 리턴
+- `Optional<T> findAny(Predicate<T> predicate)`: predicate 조건에 일치하는 요소 리턴 (병렬)
+
+#### 통계
+- `long count()`: 요소의 개수 리턴
+- `Optional<T> max(Comparator<T> comparator)`: 요소 중 최댓값 리턴
+- `Optional<T> min(Comparator<T> comparator)`: 요소 중 최솟값 리턴
+- 위 메소드 대신 대부분 기본형 스트림으로 변환하거나, `reduce()`나 `collect()`를 사용
+
+#### 리듀싱
+```java
+Optional<T> reduce(BinaryOperator<T> accumulator)
+T reduce(T identity, BinaryOperator<T> accumulator)
+U reduce(U identity, BiFunction<U,T,U> accumulator, BinaryOperator<U> combiner)
+```
+- 스트림의 요소를 줄여나가면서 연산 수행하고 최종결과 리턴
+- `identity`: 초기값
+- `accumulator`: 적용할 연산
+- `combiner`: 병렬스트림에 의해 처리된 결과를 합칠 때 사용
+
+#### 컬렉팅
+> 추후 추가 예정
 
 #### 기본형 Stream 추가 메소드
 ```java
@@ -140,4 +178,3 @@ OptionalInt max()
 OptionalInt min()
 IntSummaryStatistics summaryStatistics()  // 스트림 소모 한 번으로 위의 값들을 얻을 수 있음
 ```
-
