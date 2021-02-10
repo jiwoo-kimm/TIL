@@ -22,3 +22,4 @@
 ## 예시
 
 ![example](https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/2MrI/image/SspXF6d-yHxiByiz7GlFz-g2NQU.PNG)
++) 여러 방식의 템플릿이 있지만, 팀 커뮤니케이션에 가장 효율적으로 활용할 수 있는 방안으로 작성하는 것이 바람직하다.
