@@ -1,3 +1,3 @@
 # UML
 
-## Association/Aggregation/Composition
+## Relations
