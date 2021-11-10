@@ -15,5 +15,7 @@
 
 # go
 
+- [ ] [Effective Go](https://golang.org/doc/effective_go#web_server)
 - [ ] [Go 언어 고루틴 / 채널 / 동기화 / 셀렉트](https://judo0179.tistory.com/88)
 - [ ] [golang go : wiki](https://github.com/golang/go/wiki)
+- [ ] [[이더리움에서 배우는 Go언어] select 의 거의 모든 패턴들](https://hamait.tistory.com/1017)
