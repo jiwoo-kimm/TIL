@@ -5,7 +5,10 @@
 
 # 컨테이너
 
-- `docker run ~`
+- `docker run <options> <IMAGE_NAME:IMAGE_VERSION>`
+  - `<options>`
+    - `-i` : foreground 실행, `-d` : background 실행
+    - `-p <MACHINE_PORT:CONTAINER_PORT>` : Port forwaring from `MACHINE_PORT` to `CONTAINER_PORT`
 - `docker restart <PID>`
 - `docker attach <PID>`
 - `docker commit <PID> <REPOSITORY>:<TAG>`
