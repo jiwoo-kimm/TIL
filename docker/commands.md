@@ -17,6 +17,9 @@
 - `docker rm <PID>`: 컨테이너 삭제
   - `docker rm $(docker ps -a -q)`: 모든 컨테이너 삭제
 
+- `docker exec [OPTIONS] CONTAINER COMMAND [ARG...]`: 이미 실행 중인 컨테이너에서 명령어 수행
+
+
 # 이미지
 
 - `docker build -t <IMAGE_NAME:IMAGE_VERSION> <Dockerfile Path>`
