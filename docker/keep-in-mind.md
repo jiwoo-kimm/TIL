@@ -12,3 +12,5 @@
   - 위 3가지 명령어를 줄이면 레이어가 줄어들고 캐시도 효율적으로 관리할 수 있음
 
 ![image](https://user-images.githubusercontent.com/43198798/141056250-bd615c48-7b24-4172-a82f-43f5ced6b07c.png)
+
++) 이미지는 READ-ONLY 레이어로 실행되고, 컨테이너에서 새로 생성되는 레이어는 READ-AND-WRITE 레이어로 생성됨
