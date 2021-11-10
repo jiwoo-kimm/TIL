@@ -9,6 +9,7 @@
 - [ ] [도커 이미지 빌드와 Dockerfile 기초](https://www.44bits.io/ko/post/building-docker-image-basic-commit-diff-and-dockerfile)
 - [ ] [초보를 위한 도커 안내서](https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html)
 - [ ] [도커 이미지 잘 만드는 방법](https://jonnung.dev/docker/2020/04/08/optimizing-docker-images/)
+- [ ] [만들면서 이해하는 도커(Docker) 이미지의 구조](https://www.44bits.io/ko/post/how-docker-image-work)
 
 # linux
 
