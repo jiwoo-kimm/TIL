@@ -1,7 +1,7 @@
 # VPC
 
 - Virtual Private Cloud
-- 독립된 네트워크 환경을 직접 설계
+- 독립된 네트워크 환경을 직접 설계하고 인터넷과 연결
 
 # AWS VPC
 
