@@ -35,6 +35,12 @@
 - Linux OS에서 지원하는 다양한 기능을 사용해 컨테이너(하나의 프로세스)를 실행하기 위한 별도의 환경(파일 시스템)을 제공
 - Linux namespace와 다양한 kernel 기능을 조합해 프로세스를 특별하게 실행
 
+## 가상머신
+
+- 도커는 사실 Linux 가상머신 위에서 동작한다.
+- VM이 host, 로컬 머신은 client로서 동작한다.
+**![image](https://user-images.githubusercontent.com/43198798/141060448-c4034de1-2abc-4ce8-8aee-1f6df82ec73e.png)
+
 
 ## 도커 컨테이너
 
