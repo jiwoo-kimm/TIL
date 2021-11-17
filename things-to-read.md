@@ -29,3 +29,8 @@
 # vpc
 
 - [x] [만들면서 배우는 아마존 버추얼 프라이빗 클라우드(Amazon VPC)](https://www.44bits.io/ko/post/understanding_aws_vpc#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0-%EC%95%84%EB%A7%88%EC%A1%B4-vpc%EB%A5%BC-%EA%BC%AD-%EC%9D%B4%ED%95%B4%ED%95%B4%EC%95%BC%ED%95%98%EB%82%98%EC%9A%94)
+
+# 설계
+
+- [ ] [리소스 중심 디자인](https://cloud.google.com/apis/design/resources#resources)
+
