@@ -33,5 +33,11 @@
 
 # 설계
 
+- [x] [Ready for changes with Hexagonal Architecture](https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749)
 - [ ] [리소스 중심 디자인](https://cloud.google.com/apis/design/resources#resources)
+
+# grpc
+
+- [ ] [Protocal Buffer Basics: Go](https://developers.google.com/protocol-buffers/docs/gotutorial)
+- [ ] [Language Guide (proto3)](https://developers.google.com/protocol-buffers/docs/proto3/)
 
