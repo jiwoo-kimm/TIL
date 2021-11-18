@@ -3,6 +3,7 @@
 - [x] [What is Live Streaming and How Does Live Streaming Work?](https://ottverse.com/what-is-live-streaming-how-does-livestreaming-work/)
 - [ ] [Docker 기반 분산 트랜스코더 개발](https://d2.naver.com/helloworld/3661677)
   - 트랜스코딩, 분산트랜스코딩, 아키텍쳐 최적화, 분할길이 최적화, 비디오 트랜스코딩, 오디오 트랜스코딩
+- [ ] [Redis Pub/Sub을 사용해 대규모 사용자에게 고속으로 설정 정보를 배포한 사례 - 2021 Korean version](https://www.youtube.com/watch?v=CENLaIz2Yb8)
 
 # docker
 
