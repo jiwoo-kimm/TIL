@@ -24,7 +24,9 @@
 - [x] [Writing Web Applications](https://golang.org/doc/articles/wiki/#tmp_1/)
 - [x] [3 Web foundation](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/03.0.html)
 
-- [ ] [Go 언어 고루틴 / 채널 / 동기화 / 셀렉트](https://judo0179.tistory.com/88)
+## goroutine
+
+- [x] [Go 언어 고루틴 / 채널 / 동기화 / 셀렉트](https://judo0179.tistory.com/88)
 - [ ] [[이더리움에서 배우는 Go언어] select 의 거의 모든 패턴들](https://hamait.tistory.com/1017)
 
 # vpc
