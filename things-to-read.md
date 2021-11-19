@@ -35,6 +35,7 @@
 
 - [x] [Ready for changes with Hexagonal Architecture](https://netflixtechblog.com/ready-for-changes-with-hexagonal-architecture-b315ec967749)
 - [ ] [리소스 중심 디자인](https://cloud.google.com/apis/design/resources#resources)
+- [ ] [Cutting Edge - CQRS for the Common Application](https://docs.microsoft.com/en-us/archive/msdn-magazine/2015/june/cutting-edge-cqrs-for-the-common-application)
 
 # grpc
 
