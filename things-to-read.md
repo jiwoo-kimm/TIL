@@ -48,3 +48,6 @@
 - [ ] [Protocal Buffer Basics: Go](https://developers.google.com/protocol-buffers/docs/gotutorial)
 - [ ] [Language Guide (proto3)](https://developers.google.com/protocol-buffers/docs/proto3/)
 
+# db
+
+- [ ] [[Cache & Redis] 캐싱 전략 (Cashing Strategies)](https://sabarada.tistory.com/142)
