@@ -45,8 +45,7 @@
 
 # grpc
 
-- [ ] [Protocal Buffer Basics: Go](https://developers.google.com/protocol-buffers/docs/gotutorial)
-- [ ] [Language Guide (proto3)](https://developers.google.com/protocol-buffers/docs/proto3/)
+- [ ] [gRPC Load Balancing](https://grpc.io/blog/grpc-load-balancing/)
 
 # db
 
