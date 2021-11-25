@@ -50,3 +50,4 @@
 # db
 
 - [ ] [[Cache & Redis] 캐싱 전략 (Cashing Strategies)](https://sabarada.tistory.com/142)
+- [ ] [Best Practices for Designing and Architecting with DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)
